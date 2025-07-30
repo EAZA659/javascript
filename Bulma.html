@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+            <div class="buttons">
+                <button class="button is-info" onclick="checkEven()">EvenOdd</button>
+                <button class="button is-success" onclick="ageGroup()">age group</button>
+                <button class="button is-warning" onclick="EnterPassword()">EnterPassword</button>
+                <button class="button is-danger" onclick="Garig()">Garig</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container is-widescreen">
+        <div class="notification is-primary">
+            <article class="message">
+                <div class="message=body" id="result"></div>
+            </article>
+        </div>
+    </div>
+    <script>
+        let = output
+        function print() {
+            document.getElementById("result").innerText = output
+        }
+        function checkEven() {
+            const numberInput = prompt("toogoo oruul")
+            const number = Number(numberInput)
+            if (number % 2 == 0) {
+                output = "even"
+            } else {
+                output = "odd"
+            }
+            print();
+        }
+
+        function ageGroup() {
+            const ageInput = prompt("nasaa oruul")
+            const age = Number(ageInput)
+            if (age <= 13) {
+                output = "child"
+            } else if (age >= 13 && age
+                <= 19) {
+                output = "teenager"
+            } else if (age >= 21) {
+                output = "adult"
+            } print();
+        }
+        function EnterPassword() {
+            const username = prompt("Enter username")
+            const password = prompt("Enter password")
+            if (username === "Amarbayar" && password === "1515") {
+                output = "correct"
+            }
+            else {
+                output = "incorrect"
+            }
+            print();
+        }
+        function Garig() {
+            const garigInput = prompt("Garig")
+            const garig = Number(garigInput)
+            if (garig === 1) {
+                output = "dawaa"
+            } else if (garig === 2) {
+                output = "mygmar"
+            } else if (garig === 3) {
+                output = "Lhagwa"
+            } else if (garig === 4) {
+                output = "purev"
+            } else if (garig === 5) {
+                output = "baasan"
+            } else if (garig === 6) {
+                output = "bymba"
+            } else if (garig === 7) {
+                output = "nym"
+            } else if (garig >= 8) {
+                output = "bhgue"
+            } print();
+        }
+    </script>
+</body>
+
+</html>
